@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+  char z, tab[20]; 
+  int i;
+
+  for(i=0; i<20; i++)
+    tab[i]=' ';
+
+  i=0;
+  z=getchar();
+
+  while(z!=EOF || i==20)
+  {
+    scanf("%c",&tab[i]);
+    i++;
+    z=getchar();
+  }
+  printf("\n");
+  for(i=0; i<20; i++)
+    printf("%c",tab[i]);
+
+  return 0;
+}
